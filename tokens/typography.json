@@ -1,0 +1,26 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "typography": {
+    "font-family-sans": {
+      "$value": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif",
+      "$type": "fontFamily"
+    },
+    "font-family-mono": {
+      "$value": "'SF Mono', 'Fira Code', 'JetBrains Mono', 'Menlo', monospace",
+      "$type": "fontFamily"
+    },
+    "line-height-base": {
+      "$value": "1.618",
+      "$type": "number",
+      "$description": "Golden Ratio"
+    },
+    "font-size-xs":   { "$value": "12px", "$type": "dimension" },
+    "font-size-sm":   { "$value": "14px", "$type": "dimension" },
+    "font-size-base": { "$value": "16px", "$type": "dimension" },
+    "font-size-lg":   { "$value": "18px", "$type": "dimension" },
+    "font-size-xl":   { "$value": "20px", "$type": "dimension" },
+    "font-size-2xl":  { "$value": "24px", "$type": "dimension" },
+    "font-size-3xl":  { "$value": "30px", "$type": "dimension" },
+    "font-size-4xl":  { "$value": "36px", "$type": "dimension" }
+  }
+}

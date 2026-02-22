@@ -1,0 +1,37 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "color": {
+    "black": { "$value": "#000000", "$type": "color" },
+    "white": { "$value": "#FFFFFF", "$type": "color" },
+    "amber": { "$value": "#F5A623", "$type": "color" },
+    "hot-pink": { "$value": "#FF1D6C", "$type": "color", "$description": "Primary brand color" },
+    "electric-blue": { "$value": "#2979FF", "$type": "color" },
+    "violet": { "$value": "#9C27B0", "$type": "color" },
+
+    "brand-gradient": {
+      "$value": "linear-gradient(135deg, #F5A623 0%, #FF1D6C 38.2%, #9C27B0 61.8%, #2979FF 100%)",
+      "$type": "gradient",
+      "$description": "Primary brand gradient — golden ratio stops"
+    },
+
+    "agent-lucidia": { "$value": "#00BCD4", "$type": "color", "$description": "Lucidia agent cyan" },
+    "agent-octavia": { "$value": "#9C27B0", "$type": "color", "$description": "Octavia agent purple" },
+    "agent-alice": { "$value": "#4CAF50", "$type": "color", "$description": "Alice agent green" },
+    "agent-aria": { "$value": "#2196F3", "$type": "color", "$description": "Aria agent blue" },
+    "agent-shellfish": { "$value": "#F44336", "$type": "color", "$description": "Shellfish agent red" },
+
+    "terminal-green": { "$value": "#00FF41", "$type": "color" },
+    "terminal-bg": { "$value": "#0A0A0A", "$type": "color" },
+
+    "DEPRECATED": {
+      "$description": "These colors are from the old system. DO NOT USE.",
+      "old-orange": { "$value": "#FF9D00", "$type": "color" },
+      "old-orange-2": { "$value": "#FF6B00", "$type": "color" },
+      "old-pink": { "$value": "#FF0066", "$type": "color" },
+      "old-pink-2": { "$value": "#FF006B", "$type": "color" },
+      "old-purple": { "$value": "#D600AA", "$type": "color" },
+      "old-violet": { "$value": "#7700FF", "$type": "color" },
+      "old-blue": { "$value": "#0066FF", "$type": "color" }
+    }
+  }
+}

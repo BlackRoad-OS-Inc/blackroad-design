@@ -1,0 +1,17 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "animation": {
+    "ease-default": {
+      "$value": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+      "$type": "cubicBezier"
+    },
+    "ease-spring": {
+      "$value": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
+      "$type": "cubicBezier",
+      "$description": "Overshoot spring — use for interactive elements"
+    },
+    "duration-fast":   { "$value": "100ms", "$type": "duration" },
+    "duration-normal": { "$value": "200ms", "$type": "duration" },
+    "duration-slow":   { "$value": "400ms", "$type": "duration" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Spacing scale based on Golden Ratio (φ = 1.618)",
+  "spacing": {
+    "xs":  { "$value": "8px",  "$type": "dimension" },
+    "sm":  { "$value": "13px", "$type": "dimension", "$description": "8 × φ" },
+    "md":  { "$value": "21px", "$type": "dimension", "$description": "13 × φ" },
+    "lg":  { "$value": "34px", "$type": "dimension", "$description": "21 × φ" },
+    "xl":  { "$value": "55px", "$type": "dimension", "$description": "34 × φ" },
+    "2xl": { "$value": "89px", "$type": "dimension", "$description": "55 × φ" },
+    "3xl": { "$value": "144px","$type": "dimension", "$description": "89 × φ" }
+  }
+}

@@ -1,0 +1,53 @@
+GIMP Palette
+Name: BlackRoad Official
+Columns: 6
+#
+# BlackRoad Official Color Palette
+# For use in GIMP, Aseprite, and other editors
+#
+  0   0   0	Black (Background)
+255 255 255	White (Text/Highlights)
+245 166  35	Amber (Primary Accent)
+255  29 108	Hot Pink (Action/Alerts)
+ 41 121 255	Electric Blue (Tech/Water)
+156  39 176	Violet (Magic/Rare)
+#
+# Extended Palette - Shades
+#
+ 20  20  20	Near Black
+ 40  40  40	Dark Gray
+ 80  80  80	Medium Gray
+120 120 120	Light Gray
+200 200 200	Off White
+#
+# Amber Shades
+#
+122  83  18	Amber Dark
+184 125  26	Amber Medium
+245 166  35	Amber Primary
+250 190  90	Amber Light
+255 220 150	Amber Pale
+#
+# Hot Pink Shades
+#
+128  15  54	Pink Dark
+191  22  81	Pink Medium
+255  29 108	Pink Primary
+255 100 150	Pink Light
+255 180 200	Pink Pale
+#
+# Electric Blue Shades
+#
+ 20  61 128	Blue Dark
+ 31  91 191	Blue Medium
+ 41 121 255	Blue Primary
+100 160 255	Blue Light
+180 210 255	Blue Pale
+#
+# Violet Shades
+#
+ 78  20  88	Violet Dark
+117  30 132	Violet Medium
+156  39 176	Violet Primary
+190 100 210	Violet Light
+220 170 230	Violet Pale

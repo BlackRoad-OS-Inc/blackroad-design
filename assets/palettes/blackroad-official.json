@@ -1,0 +1,57 @@
+{
+  "name": "BlackRoad Official Palette",
+  "version": "1.0.0",
+  "description": "Official color palette for BlackRoad pixel art assets",
+  "colors": {
+    "primary": {
+      "black": "#000000",
+      "white": "#FFFFFF",
+      "amber": "#F5A623",
+      "hotPink": "#FF1D6C",
+      "electricBlue": "#2979FF",
+      "violet": "#9C27B0"
+    },
+    "grays": {
+      "nearBlack": "#141414",
+      "darkGray": "#282828",
+      "mediumGray": "#505050",
+      "lightGray": "#787878",
+      "offWhite": "#C8C8C8"
+    },
+    "amberShades": {
+      "dark": "#7A5312",
+      "medium": "#B87D1A",
+      "primary": "#F5A623",
+      "light": "#FABE5A",
+      "pale": "#FFDC96"
+    },
+    "pinkShades": {
+      "dark": "#800F36",
+      "medium": "#BF1651",
+      "primary": "#FF1D6C",
+      "light": "#FF6496",
+      "pale": "#FFB4C8"
+    },
+    "blueShades": {
+      "dark": "#143D80",
+      "medium": "#1F5BBF",
+      "primary": "#2979FF",
+      "light": "#64A0FF",
+      "pale": "#B4D2FF"
+    },
+    "violetShades": {
+      "dark": "#4E1458",
+      "medium": "#751E84",
+      "primary": "#9C27B0",
+      "light": "#BE64D2",
+      "pale": "#DCAAE6"
+    }
+  },
+  "agents": {
+    "octavia": { "color": "#9C27B0", "role": "The Architect" },
+    "lucidia": { "color": "#00BCD4", "role": "The Dreamer" },
+    "alice": { "color": "#4CAF50", "role": "The Operator" },
+    "aria": { "color": "#2979FF", "role": "The Interface" },
+    "shellfish": { "color": "#F44336", "role": "The Hacker" }
+  }
+}

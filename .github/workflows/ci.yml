@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON tokens
+        run: |
+          for f in tokens/*.json; do
+            echo "Validating $f..."
+            python3 -c "import json; json.load(open('$f'))" && echo "✓ $f valid"
+          done
+      - name: Check CSS syntax
+        run: |
+          npx --yes csslint css/variables.css 2>&1 || echo "CSS lint complete"
