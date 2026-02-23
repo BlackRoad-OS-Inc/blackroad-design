@@ -1,0 +1,28 @@
+{
+  "name": "@blackroad/design",
+  "version": "1.0.0",
+  "description": "BlackRoad OS Design System — tokens, variables, Tailwind preset",
+  "type": "module",
+  "main": "src/tokens/generator.js",
+  "types": "src/tokens/generator.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --loader ts-node/esm test/test_design_tokens.ts",
+    "lint": "eslint src/ test/",
+    "validate-colors": "node --loader ts-node/esm scripts/validate-colors.ts",
+    "generate:css": "node --loader ts-node/esm scripts/generate-css.ts",
+    "generate:tailwind": "node --loader ts-node/esm scripts/generate-tailwind.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.0.0"
+  },
+  "keywords": ["design-system", "tokens", "tailwind", "blackroad"],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackRoad-OS-Inc/blackroad-design.git"
+  }
+}
