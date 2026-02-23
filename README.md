@@ -1,5 +1,7 @@
 # blackroad-design
 
+[![CI](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml/badge.svg)](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml)
+
 > **BlackRoad OS Design System** — brand tokens, color palettes, typography, CSS utilities, and pixel art assets.
 
 [![Design System](https://img.shields.io/badge/design-system-FF1D6C?style=flat-square)](https://blackroad.ai)
