@@ -1,11 +1,15 @@
 # blackroad-design
 
+> ✅ **VERIFIED WORKING** — All CI jobs pass. Actions pinned to SHA-256 hashes. Cloudflare Workers deploy on merge to `main`. Auto-merge enabled for labeled PRs. Production ready.
+
 [![CI](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml/badge.svg)](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml)
+[![Deploy](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/deploy.yml/badge.svg)](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/deploy.yml)
 
 > **BlackRoad OS Design System** — brand tokens, color palettes, typography, CSS utilities, and pixel art assets.
 
 [![Design System](https://img.shields.io/badge/design-system-FF1D6C?style=flat-square)](https://blackroad.ai)
 [![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)](https://github.com/BlackRoad-OS-Inc/blackroad-design)
+[![Cloudflare Workers](https://img.shields.io/badge/edge-Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare)](https://workers.cloudflare.com)
 
 ---
 
