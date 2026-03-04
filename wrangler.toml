@@ -1,0 +1,14 @@
+# Cloudflare Workers — BlackRoad Design System CDN
+name = "blackroad-design"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Serve static design system assets at the edge
+[assets]
+directory = "./public"
+
+[env.production]
+name = "blackroad-design"
+
+[env.preview]
+name = "blackroad-design-preview"

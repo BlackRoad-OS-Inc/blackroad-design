@@ -1,0 +1,71 @@
+name: Deploy to Cloudflare Workers
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to Cloudflare Edge
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # actions/checkout@v4
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --quiet
+
+      - name: Run tests (gate before deploy)
+        run: npm test
+
+      - name: Build TypeScript
+        run: npm run build
+
+      - name: Assemble public assets
+        run: |
+          mkdir -p public
+          # Copy generated CSS variables
+          cp css/variables.css public/variables.css
+          cp css/tailwind-preset.js public/tailwind-preset.js
+          # Copy design tokens (excluding deprecated entries from the CDN)
+          node -e "
+            const fs = require('fs');
+            const tokens = {};
+            ['colors','spacing','typography','animation'].forEach(name => {
+              const file = 'tokens/' + name + '.json';
+              if (fs.existsSync(file)) {
+                const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+                // Strip DEPRECATED section before publishing
+                if (data.color?.DEPRECATED) delete data.color.DEPRECATED;
+                tokens[name] = data;
+              }
+            });
+            fs.writeFileSync('public/tokens.json', JSON.stringify(tokens, null, 2));
+            console.log('✓ public/tokens.json written');
+          "
+          echo "✅ Public assets assembled:"
+          ls -la public/
+
+      - name: Deploy to Cloudflare Workers (production)
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --env production
+          workingDirectory: '.'
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # actions/upload-artifact@v4
+        with:
+          name: design-system-public
+          path: public/
+          retention-days: 30
