@@ -1,0 +1,23 @@
+name: Auto-merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  automerge:
+    name: Enable Auto-merge
+    runs-on: ubuntu-latest
+    if: github.actor == 'github-actions[bot]' || github.actor == 'copilot-swe-agent[bot]' || contains(github.event.pull_request.labels.*.name, 'automerge')
+    steps:
+      - name: Enable auto-merge (squash)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge --auto --squash "${{ github.event.pull_request.number }}" \
+            --repo "${{ github.repository }}" || true
+          echo "✅ Auto-merge enabled for PR #${{ github.event.pull_request.number }}"
