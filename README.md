@@ -1,126 +1,41 @@
+<div align="center">
+
+<img src="https://images.blackroad.io/pixel-art/road-logo.png" alt="BlackRoad OS" width="80" />
+
 # blackroad-design
 
-> ✅ **VERIFIED WORKING** — All CI jobs pass. Actions pinned to SHA-256 hashes. Cloudflare Workers deploy on merge to `main`. Auto-merge enabled for labeled PRs. Production ready.
+**BlackRoad OS brand system — design tokens, color palette, typography, UI components**
 
-[![CI](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml/badge.svg)](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/ci.yml)
-[![Deploy](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/deploy.yml/badge.svg)](https://github.com/BlackRoad-OS-Inc/blackroad-design/actions/workflows/deploy.yml)
+[![BlackRoad OS](https://img.shields.io/badge/BlackRoad_OS-Pave_Tomorrow-FF2255?style=for-the-badge&labelColor=000000)](https://blackroad.io)
+[![License](https://img.shields.io/badge/License-Proprietary-FF6B2B?style=for-the-badge&labelColor=000000)](./LICENSE)
+[![Edge AI](https://img.shields.io/badge/Edge_AI-52_TOPS-00D4FF?style=for-the-badge&labelColor=000000)](https://github.com/BlackRoad-OS-Inc)
 
-> **BlackRoad OS Design System** — brand tokens, color palettes, typography, CSS utilities, and pixel art assets.
+</div>
 
-[![Design System](https://img.shields.io/badge/design-system-FF1D6C?style=flat-square)](https://blackroad.ai)
-[![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)](https://github.com/BlackRoad-OS-Inc/blackroad-design)
-[![Cloudflare Workers](https://img.shields.io/badge/edge-Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare)](https://workers.cloudflare.com)
-
----
-
-## 📦 Contents
-
-```
-blackroad-design/
-├── tokens/          # Design tokens (JSON — source of truth)
-│   ├── colors.json
-│   ├── spacing.json
-│   ├── typography.json
-│   └── animation.json
-├── css/             # Generated CSS
-│   ├── variables.css      # CSS custom properties
-│   └── tailwind-preset.js # Tailwind config preset
-├── assets/          # Visual assets
-│   └── palettes/    # Official color palettes (.gpl + .json)
-├── icons/           # Icon library
-├── components/      # Component design specs
-└── docs/            # Design documentation
-```
+<div align="center">
+<sub>Part of the <a href="https://blackroad.io">BlackRoad OS</a> ecosystem — sovereign edge AI infrastructure</sub>
+</div>
 
 ---
 
-## 🎨 Brand Colors
+## Overview
 
-| Name | Hex | Usage |
-|------|-----|-------|
-| Hot Pink | `#FF1D6C` | **Primary** — CTAs, active states |
-| Amber | `#F5A623` | Accent — highlights, warnings |
-| Violet | `#9C27B0` | Secondary — Octavia agent |
-| Electric Blue | `#2979FF` | Info — links, secondary actions |
-| Black | `#000000` | Backgrounds |
-| White | `#FFFFFF` | Text, borders on dark |
+BlackRoad OS brand system — design tokens, color palette, typography, UI components
 
-### Brand Gradient
-```css
-background: linear-gradient(135deg, #F5A623 0%, #FF1D6C 38.2%, #9C27B0 61.8%, #2979FF 100%);
-```
-> Gradient stops use **Golden Ratio** proportions (0%, 38.2%, 61.8%, 100%)
+## License
 
-### ⛔ Forbidden Colors (old system — do not use)
-`#FF9D00` `#FF6B00` `#FF0066` `#FF006B` `#D600AA` `#7700FF` `#0066FF`
+**Proprietary** — Copyright © 2024–2026 [BlackRoad OS, Inc.](https://blackroad.io) All rights reserved.
+
+Founder & CEO: **Alexa Louise Amundson** · Delaware C-Corp
+
+See [LICENSE](./LICENSE) for full terms.
 
 ---
 
-## 📐 Spacing (Golden Ratio)
+<div align="center">
 
-All spacing is derived from **φ = 1.618**:
+**BlackRoad OS — Pave Tomorrow.**
 
-| Token | Value | Rule |
-|-------|-------|------|
-| `--space-xs` | 8px | base |
-| `--space-sm` | 13px | × φ |
-| `--space-md` | 21px | × φ |
-| `--space-lg` | 34px | × φ |
-| `--space-xl` | 55px | × φ |
-| `--space-2xl` | 89px | × φ |
-| `--space-3xl` | 144px | × φ |
+[blackroad.io](https://blackroad.io) · [GitHub](https://github.com/BlackRoad-OS-Inc) · [Brand](https://brand.blackroad.io)
 
----
-
-## 🔤 Typography
-
-- **Sans**: SF Pro Display → Segoe UI → system-ui
-- **Mono**: SF Mono → Fira Code → JetBrains Mono
-- **Line height**: `1.618` (Golden Ratio)
-
----
-
-## 🤖 Agent Colors
-
-Each AI agent has a distinct identity color:
-
-| Agent | Color | Hex |
-|-------|-------|-----|
-| Lucidia | Cyan | `#00BCD4` |
-| Octavia | Purple | `#9C27B0` |
-| Alice | Green | `#4CAF50` |
-| Aria | Blue | `#2196F3` |
-| Shellfish | Red | `#F44336` |
-
----
-
-## 🚀 Usage
-
-### CSS Custom Properties
-```html
-<link rel="stylesheet" href="https://cdn.blackroad.ai/design/variables.css">
-```
-
-```css
-.cta-button {
-  background: var(--gradient-brand);
-  padding: var(--space-sm) var(--space-md);
-  font-family: var(--font-sans);
-  line-height: var(--line-height);
-}
-```
-
-### Tailwind CSS
-```js
-// tailwind.config.js
-const blackroadPreset = require('./css/tailwind-preset.js')
-
-module.exports = {
-  presets: [blackroadPreset],
-  // ...
-}
-```
-
----
-
-> © BlackRoad OS, Inc. All rights reserved. Proprietary design assets.
+</div>
